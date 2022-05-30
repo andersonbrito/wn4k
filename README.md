@@ -29,7 +29,7 @@ This will get all genome sequences and associated metadata from NCBI.
 
 #### Downloading only new entries, appending new data to existing files
 
-If existing files are provided (see examples inside `input_files` folder above), the command below will avoid re-downloading entries already present in the files (genomes and rows of metadata), and will resume the download of entries not yet present in the existing files.
+If existing files are provided (see examples inside `input_files` folder above), the command below will avoid re-downloading entries already present in the files (genomes and rows of metadata), and will resume the download of new entries, only.
 
 ```
 python download_sequences.py --sequences sequences.fasta --metadata metadata.tsv --mode append
