@@ -17,13 +17,19 @@ Under construction
 
 ## Data download
 
+#### Downloading all genomes and metadata from scratch
+
 To automatically download data (genomes and metadata) from NCBI, run the following command. This will generate the basic inputs to run the analysis.
 
 ```
 python download_sequences.py --mode separate
 ```
 
-This will get all genome sequences and associated metadata from NCBI. If existing files are provided (see examples inside `input_files` folder above), the command below will avoid re-downloading entries already present in the files (genomes and rows of metadata), and will resume the download of entries not yet present in the existing files.
+This will get all genome sequences and associated metadata from NCBI.
+
+#### Downloading only new entries, appending new data to existing files
+
+If existing files are provided (see examples inside `input_files` folder above), the command below will avoid re-downloading entries already present in the files (genomes and rows of metadata), and will resume the download of entries not yet present in the existing files.
 
 ```
 python download_sequences.py --sequences sequences.fasta --metadata metadata.tsv --mode append
