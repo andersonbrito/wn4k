@@ -38,6 +38,11 @@ python download_sequences.py --sequences sequences.fasta --metadata metadata.tsv
 The argument `--append` above will append the newly downloaded sequences and metadata rows at the bottom of the corresponding files. If `--separate` is used, separate files will be generated. If names for `--outpu1` and `--outpu2` are provided, those will be the names of the newly generated FASTA file and metadata, respectively.
 
 
+Run the command below to see more instructions:
+```
+python download_sequences.py --h
+```
+
 ## Run the build
 ```
 Under construction
