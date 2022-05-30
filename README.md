@@ -17,9 +17,9 @@ Under construction
 
 ## Data download
 
-#### Downloading all genomes and metadata from scratch
+#### Downloading all genomes and metadata from NCBI
 
-To automatically download data (genomes and metadata) from NCBI, run the following command. This will generate the basic inputs to run the analysis.
+To automatically download all WNV data (genomes and metadata) from NCBI, run the following command. This will generate the basic inputs to run the analysis.
 
 ```
 python download_sequences.py --mode separate
